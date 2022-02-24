@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+h1, h2 ,h3, h4, h5, h6 {
+    color: $black;
+    font-weight: 900;
+
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+
+$tablet: 768px;
+$desktop: 1440px;
