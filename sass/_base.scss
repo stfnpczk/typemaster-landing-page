@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
 
+$dark-blue: #162542;
+$orange: #F16718;
+$light-orange: #FF9B62;
+$dark-gray: #788BAD;
+$gray: #E8EFF2;
+$white: #FFFFFF;
+
 body {
     font-family: 'Barlow', sans-serif;
     min-height: 100vh;
     font-weight: 300;
     overflow-x: hidden;
+
 }
 
 h1, h2 ,h3, h4, h5, h6 {
-    color: $black;
+    color: $dark-blue;
     font-weight: 900;
 
 }
 
 p {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
 }
 
 img {
-    width: 100%;
+    display: block;
+    // width: 100%;
     height: auto;
   }
 

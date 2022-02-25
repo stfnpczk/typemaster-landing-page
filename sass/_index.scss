@@ -1,17 +1,65 @@
 /*----------------------------
       layout
  ----------------------------*/
-  
-  
-  
+.page-wrapper { 
+  margin: 23px 24px 50px;
+}
 /*----------------------------
-      ??? section
+      header section
 ----------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  // margin: 23px 24px;
+  height: 40px;
+
+  &__preorder-button {
+    text-decoration: none;
+    color: $dark-blue;
+    background-color: $gray;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    // line-height: 26px;
+  }
+}
+
+/*----------------------------
+      main (tm) section 
+----------------------------*/
+.tm {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 64px 0 32px;
+  }
+
+  &__paragraph {
+    margin: 0 0 32px;
+  }
+
+  &__preorder-button {
+    background-color: $orange;
+    color: $white;
+    margin: 0 32px 0 0;
+  }
+
+  &__image-container {
+    // height: 331px;
+    margin: 64px 0 0;
+  }
+
+  &__keyboard-image {
+    width: 93.6vw;
+  }
   
-  
-  
+}
 /*----------------------------
       footer section 
 ----------------------------*/
-  
-  
