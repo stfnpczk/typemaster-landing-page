@@ -10,28 +10,28 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 23px 24px;
-  height: 48px;
+  margin: 6.1333333333vw 6.4vw;
+  height: 12.8vw;
 
   &__logo {
-    width: 40px;
-    height: 40px;
+    width: 10.6666666667vw;
+    height: 10.6666666667vw;
   }
 
   &__preorder-button {
     text-decoration: none;
     color: $dark-blue;
     background-color: $gray;
-    border-radius: 8px;
-    padding: 15px 14px;
-    font-size: 16px;
+    border-radius: 2.1333333333vw;
+    padding: 15px 3.7333333333vw;
+    font-size: 4.2666666667vw;
     font-weight: 700;
     // line-height: 26px;
   }
 }
 
 /*----------------------------
-      main (tm) section 
+      tm section 
 ----------------------------*/
 .tm {
   &__content-container-one {
@@ -40,46 +40,42 @@
   }
 
   &__info {
-    margin: 0 24px;
+    margin: 0 6.4vw;
   }
 
   &__heading {
-    font-size: 48px;
-    line-height: 48px;
-    margin: 64px 0 32px;
+    font-size: 12.8vw;
+    line-height: 12.8vw;
+    margin: 17.0666666667vw 0 8.5333333333vw;
   }
 
   &__paragraph {
-    margin: 0 0 32px;
+    margin: 0 0 8.5333333333vw;
   }
 
   &__preorder-container {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 8.5333333333vw;
   }
   &__preorder-button {
     background-color: $orange;
     color: $white;
-    // margin: 0 32px 0 0;
   }
 
   &__release-date {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 4.2666666667vw;
+    line-height: 6.9333333333vw;
     font-weight: 700;
   }
 
   &__image-container {
-    // width: 375px ;
-    // height: 331px;
-    margin: 64px 0 0 24px;
+    margin: 17.0666666667vw 0 0 6.4vw;
   }
 
   &__keyboard-image {
-    // width: 93.6vw;
     max-width: 100%;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
   }
 
   &__content-container-two {
@@ -89,14 +85,21 @@
 
   &__image-container-two {
     display: grid;
-    grid-template-columns: 35% 65%;
-    gap: 30px;
-    margin: 24px 24px 75px 0;
+    grid-template-columns: 35% auto;
+    gap: 6.4vw;
+    margin: 6.4vw 6.4vw 20vw 0;
+  }
+
+  &__orange-filter {
+    background-color: $orange;
+    border-radius: 0 20px 20px 0;
   }
 
   &__keyboard-image-orange {
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
   }
 
   &__keyboard-image-table {
@@ -105,19 +108,74 @@
   }
 
   &__subheading {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 8.5333333333vw;
+    line-height: 9.6vw;
     text-align: center;
-    max-width: 255px;
-    margin: 0 auto 24px;
+    max-width: 68vw;
+    margin: 0 auto 6.4vw;
   }
 
   &__paragraph--mechanical {
-    max-width: 327px ;
-    margin: 0 auto;
+    max-width: 87.2vw;
+    margin: 0 auto 29.6vw;
     text-align: center;
   }
 }
 /*----------------------------
+      features section 
+----------------------------*/
+.features {
+  margin: 29.6vw 6.4vw 25.6vw;
+  text-align: center;
+
+  &__feature {
+    margin: 0 0 17.0666666667vw;
+  }
+
+  &__icon {
+    width: 17.3333333333vw;
+    height: 17.3333333333vw;
+    background: $orange no-repeat center;
+    border-radius: 16px;
+    margin: 0 auto ;
+  }
+
+  &__icon--compatible {
+    background-image: url(../assets/shared/icon-compatible.svg);
+  }
+
+  &__icon--bluetooth {
+    background-image: url(../assets/shared/icon-bluetooth.svg);
+  }
+
+  &__icon--battery {
+    background-image: url(../assets/shared/icon-battery.svg);
+  }
+
+  &__icon--light {
+    background-image: url(../assets/shared/icon-light.svg);
+  }
+
+
+  &__heading {
+    font-size: 6.4vw;
+    line-height: 7.4666666667vw;
+    margin: 12.8vw 6.4vw;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+/*----------------------------
       footer section 
 ----------------------------*/
+.footer {
+  &__copyright {
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+  }
+}
