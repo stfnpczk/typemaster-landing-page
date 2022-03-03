@@ -26,6 +26,11 @@ p {
     line-height: 6.9333333333vw;
     font-weight: 500;
     color: $dark-gray;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 2.0833333333vw;
+        line-height: 3.3854166667vw;
+    }
 }
 
 img {

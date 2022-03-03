@@ -13,20 +13,36 @@
   margin: 6.1333333333vw 6.4vw;
   height: 12.8vw;
 
+  @media only screen and (min-width: 768px) {
+    margin: 40px 40px 62px;
+    height: 58px;
+  }
+
   &__logo {
     width: 10.6666666667vw;
     height: 10.6666666667vw;
+
+    @media only screen and (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__preorder-button {
     text-decoration: none;
     color: $dark-blue;
     background-color: $gray;
-    border-radius: 2.1333333333vw;
+    border-radius: 8px;
     padding: 15px 3.7333333333vw;
     font-size: 4.2666666667vw;
     font-weight: 700;
     // line-height: 26px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 16px 26px;
+    }
   }
 }
 
@@ -35,52 +51,99 @@
 ----------------------------*/
 .tm {
   &__content-container-one {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 50% auto;
+      gap: 61px;
+    }
   }
 
   &__info {
     margin: 0 6.4vw;
+
+    @media only screen and (min-width: 768px) {
+      margin: 60px 0 0 39px;
+    }
   }
 
   &__heading {
     font-size: 12.8vw;
     line-height: 12.8vw;
     margin: 17.0666666667vw 0 8.5333333333vw;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 48px;
+      margin: 0 0 34px;
+    }
   }
 
   &__paragraph {
     margin: 0 0 8.5333333333vw;
+
+    @media only screen and (min-width: 768px) {
+      margin: 0 0 39px;
+    }
   }
 
   &__preorder-container {
     display: flex;
     align-items: center;
     gap: 8.5333333333vw;
+
+    @media only screen and (min-width: 768px) {
+      gap: 37px;
+    }
   }
   &__preorder-button {
     background-color: $orange;
     color: $white;
+
+    @media only screen and (min-width: 768px) {
+      padding: 15px 3.7333333333vw;
+      font-size: 16px;
+    }
   }
 
   &__release-date {
     font-size: 4.2666666667vw;
     line-height: 6.9333333333vw;
     font-weight: 700;
+    color: $dark-gray;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   &__image-container {
     margin: 17.0666666667vw 0 0 6.4vw;
+
+    @media only screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    &__img {
+      height: 425px;
+      max-width: unset;
+      transform: translateX(30px);
+    }
   }
 
   &__keyboard-image {
     max-width: 100%;
     border-radius: 20px 0 0 20px;
   }
-
-  &__content-container-two {
-    display: flex;
-    flex-direction: column;
+  @media only screen and (min-width: 768px) {
+    &__content-container-two {
+      margin: 40px 40px 142px;
+    }
   }
 
   &__image-container-two {
@@ -88,11 +151,19 @@
     grid-template-columns: 35% auto;
     gap: 6.4vw;
     margin: 6.4vw 6.4vw 20vw 0;
+
+    @media only screen and (min-width: 768px) {
+      margin: 0;
+    }
   }
 
   &__orange-filter {
     background-color: $orange;
     border-radius: 0 20px 20px 0;
+
+    @media only screen and (min-width: 768px) {
+      border-radius: 20px;
+    }
   }
 
   &__keyboard-image-orange {
@@ -100,6 +171,10 @@
     height: 100%;
     mix-blend-mode: multiply;
     opacity: 0.75;
+
+    @media only screen and (min-width: 768px) {
+      border-radius: 20px;
+    }
   }
 
   &__keyboard-image-table {
@@ -107,18 +182,39 @@
     height: 100%;
   }
 
+  &__text {
+    text-align: center;
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+      text-align: left;
+      margin: 72px 0 0;
+    }
+  }
+
   &__subheading {
     font-size: 8.5333333333vw;
     line-height: 9.6vw;
-    text-align: center;
+    // text-align: center;
     max-width: 68vw;
     margin: 0 auto 6.4vw;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0;
+    }
   }
 
   &__paragraph--mechanical {
     max-width: 87.2vw;
     margin: 0 auto 29.6vw;
-    text-align: center;
+    // text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      max-width: 87.2vw;
+      margin: 15px 0 0;
+    }
   }
 }
 /*----------------------------
@@ -128,8 +224,20 @@
   margin: 29.6vw 6.4vw 25.6vw;
   text-align: center;
 
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin: 142px 40px;
+    text-align: left;
+  }
+
   &__feature {
     margin: 0 0 17.0666666667vw;
+
+    @media only screen and (min-width: 768px) {
+      margin: 0px;
+    }
   }
 
   &__icon {
@@ -137,7 +245,13 @@
     height: 17.3333333333vw;
     background: $orange no-repeat center;
     border-radius: 16px;
-    margin: 0 auto ;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 768px) {
+      width: 65px;
+      height: 65px;
+      margin: 0;
+    }
   }
 
   &__icon--compatible {
@@ -156,22 +270,39 @@
     background-image: url(../assets/shared/icon-light.svg);
   }
 
-
   &__heading {
     font-size: 6.4vw;
     line-height: 7.4666666667vw;
     margin: 12.8vw 6.4vw;
 
+    @media only screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 40px 0 24px;
+    }
     span {
       display: block;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    &__paragraph {
+      // max-width: 281px;
+    }
+  }
+
+
 }
 
 /*----------------------------
       footer section 
 ----------------------------*/
 .footer {
+  margin: 0 0 50px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 43px;
+  }
   &__copyright {
     text-align: center;
     span {

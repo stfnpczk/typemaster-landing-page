@@ -37,22 +37,27 @@
             </div>
           </div>
           <div class="tm__image-container">
-            <img
-              class="tm__keyboard-image"
-              src="./assets/mobile/image-keyboard.jpg"
-              alt=""
-            />
+            <picture >
+              <source media="(min-width:1440px)" srcset="./assets/desktop/image-keyboard.jpg">
+              <source media="(min-width:768px)" srcset="./assets/tablet/image-keyboard.jpg">
+              <img class="tm__img" src="./assets/mobile/image-keyboard.jpg" alt="">
+            </picture>
           </div>
         </section>
 
-        <section class="tm_content-container-two">
+        <section class="tm__content-container-two">
           <div class="tm__image-container-two">
             <div class="tm__orange-filter">
-              <img
+              <picture >
+                <source media="(min-width:1440px)" srcset="./assets/desktop/image-phone-and-keyboard.jpg">
+                <source media="(min-width:768px)" srcset="./assets/tablet/image-phone-and-keyboard.jpg">
+                <img class="tm__keyboard-image-orange" src="./assets/mobile/image-phone-and-keyboard.jpg" alt="">
+              </picture>
+              <!-- <img
                 class="tm__keyboard-image-orange"
                 src="./assets/mobile/image-phone-and-keyboard.jpg"
                 alt=""
-              />
+              /> -->
             </div>
             <img
               class="tm__keyboard-image-table"
@@ -60,7 +65,7 @@
               alt=""
             />
           </div>
-          <div class="tm-text">
+          <div class="tm__text">
             <h2 class="tm__subheading">MECHANICAL WIRELESS KEYBOARD</h2>
             <p class="tm__paragraph--mechanical tm__paragraph">
               The Typemaster keyboard boasts top-notch build and practical
