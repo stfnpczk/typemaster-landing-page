@@ -31,6 +31,11 @@ p {
         font-size: 2.0833333333vw;
         line-height: 3.3854166667vw;
     }
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 1.25vw;
+        line-height: 1.8055555556vw;
+    }
 }
 
 img {

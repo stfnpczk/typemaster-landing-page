@@ -13,16 +13,20 @@
   margin: 6.1333333333vw 6.4vw;
   height: 12.8vw;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $tablet) {
     margin: 40px 40px 62px;
     height: 58px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin: 55px 165px 83px;
   }
 
   &__logo {
     width: 10.6666666667vw;
     height: 10.6666666667vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       width: 40px;
       height: 40px;
     }
@@ -38,7 +42,7 @@
     font-weight: 700;
     // line-height: 26px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       font-size: 16px;
       line-height: 26px;
       padding: 16px 26px;
@@ -54,18 +58,42 @@
     // display: flex;
     // flex-direction: column;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       display: grid;
       grid-template-columns: 50% auto;
       gap: 61px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-template-columns: 45% auto;
+      margin: 0 165px 0;
+      gap: 70px;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    &__content-container-one::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 50%;
+      right: -285px;
+      width: 255px;
+      background-color: $gray;
+      border-radius: 20px;
     }
   }
 
   &__info {
     margin: 0 6.4vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       margin: 60px 0 0 39px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      margin: 60px 0;
     }
   }
 
@@ -74,17 +102,23 @@
     line-height: 12.8vw;
     margin: 17.0666666667vw 0 8.5333333333vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       font-size: 48px;
       line-height: 48px;
       margin: 0 0 34px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 56px;
+      line-height: 56px;
+      margin: 0 0 24px;
     }
   }
 
   &__paragraph {
     margin: 0 0 8.5333333333vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       margin: 0 0 39px;
     }
   }
@@ -94,7 +128,7 @@
     align-items: center;
     gap: 8.5333333333vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       gap: 37px;
     }
   }
@@ -102,7 +136,7 @@
     background-color: $orange;
     color: $white;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       padding: 15px 3.7333333333vw;
       font-size: 16px;
     }
@@ -114,7 +148,7 @@
     font-weight: 700;
     color: $dark-gray;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       font-size: 16px;
       line-height: 26px;
     }
@@ -123,36 +157,77 @@
   &__image-container {
     margin: 17.0666666667vw 0 0 6.4vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       margin: 0;
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $tablet) {
     &__img {
       height: 425px;
       max-width: unset;
       transform: translateX(30px);
     }
+
+    @media only screen and (min-width: $desktop) {
+      &__img {
+        height: 480px;
+        transform: unset;
+      }
+    }
   }
 
   &__keyboard-image {
-    max-width: 100%;
+    // max-width: 100%;
     border-radius: 20px 0 0 20px;
+
+    @media only screen and (min-width: $desktop) {
+      border-radius: 20px;
+    }
   }
-  @media only screen and (min-width: 768px) {
-    &__content-container-two {
+
+  &__content-container-two {
+    @media only screen and (min-width: $tablet) {
       margin: 40px 40px 142px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      display: flex;
+      gap: 125px;
+      margin: 30px 165px 168px;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    &__content-container-two::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 50%;
+      left: -285px;
+      width: 255px;
+      background-color: $gray;
+      border-radius: 20px;
     }
   }
 
   &__image-container-two {
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-columns: 34.5% auto;
     gap: 6.4vw;
     margin: 6.4vw 6.4vw 20vw 0;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
+      grid-template-columns: 30.2% auto;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-template-columns: 255px 445px;
+
+      // grid-template-columns: 255px 445px ;
+      gap: 30px;
       margin: 0;
     }
   }
@@ -161,45 +236,62 @@
     background-color: $orange;
     border-radius: 0 20px 20px 0;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       border-radius: 20px;
     }
   }
 
   &__keyboard-image-orange {
     border-radius: 0 20px 20px 0;
-    height: 100%;
+    // height: 100%;
     mix-blend-mode: multiply;
     opacity: 0.75;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       border-radius: 20px;
     }
+
+    // @media only screen and (min-width: $desktop) {
+    //   height: unset;
+    // }
   }
 
   &__keyboard-image-table {
     border-radius: 20px;
-    height: 100%;
+    // height: 100%;
+
+    // @media only screen and (min-width: $desktop) {
+    //   height: unset;
+    // }
   }
 
   &__text {
     text-align: center;
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       display: flex;
       gap: 50px;
       text-align: left;
       margin: 72px 0 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      gap: 27px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: column;
+      flex-basis: 575px;
+      margin: 92px 0 0;
     }
   }
 
   &__subheading {
     font-size: 8.5333333333vw;
     line-height: 9.6vw;
-    // text-align: center;
     max-width: 68vw;
     margin: 0 auto 6.4vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       font-size: 32px;
       line-height: 36px;
       margin: 0;
@@ -209,11 +301,16 @@
   &__paragraph--mechanical {
     max-width: 87.2vw;
     margin: 0 auto 29.6vw;
-    // text-align: center;
 
-    @media only screen and (min-width: 768px) {
-      max-width: 87.2vw;
+    @media only screen and (min-width: $tablet) {
+      // max-width: 87.2vw;
       margin: 15px 0 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 26px;
+      max-width: unset;
     }
   }
 }
@@ -224,7 +321,7 @@
   margin: 29.6vw 6.4vw 25.6vw;
   text-align: center;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -232,11 +329,21 @@
     text-align: left;
   }
 
+  @media only screen and (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 165px 128px;
+  }
+
   &__feature {
     margin: 0 0 17.0666666667vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       margin: 0px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 227px;
     }
   }
 
@@ -247,7 +354,7 @@
     border-radius: 16px;
     margin: 0 auto;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       width: 65px;
       height: 65px;
       margin: 0;
@@ -275,7 +382,7 @@
     line-height: 7.4666666667vw;
     margin: 12.8vw 6.4vw;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $tablet) {
       font-size: 24px;
       line-height: 28px;
       margin: 40px 0 24px;
@@ -284,14 +391,6 @@
       display: block;
     }
   }
-
-  @media only screen and (min-width: 768px) {
-    &__paragraph {
-      // max-width: 281px;
-    }
-  }
-
-
 }
 
 /*----------------------------
@@ -300,7 +399,7 @@
 .footer {
   margin: 0 0 50px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $tablet) {
     margin: 43px;
   }
   &__copyright {
