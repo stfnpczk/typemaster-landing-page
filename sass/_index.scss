@@ -1,9 +1,7 @@
 /*----------------------------
       layout
  ----------------------------*/
-// .page-wrapper {
-//   // margin: 23px 24px 50px;
-// }
+
 /*----------------------------
       header section
 ----------------------------*/
@@ -14,12 +12,13 @@
   height: 12.8vw;
 
   @media only screen and (min-width: $tablet) {
-    margin: 40px 40px 62px;
-    height: 58px;
+    margin: 5.2083333333vw 5.2083333333vw 8.0729166667vw;
+    height: 7.5520833333vw;
   }
 
   @media only screen and (min-width: $desktop) {
-    margin: 55px 165px 83px;
+    margin: 3.8194444444vw 11.4583333333vw 5.7638888889vw;
+    height: 4.0277777778vw;
   }
 
   &__logo {
@@ -27,8 +26,13 @@
     height: 10.6666666667vw;
 
     @media only screen and (min-width: $tablet) {
-      width: 40px;
-      height: 40px;
+      width: 5.2083333333vw;
+      height: 5.2083333333vw;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 2.7777777778vw;
+      height: 2.7777777778vw;
     }
   }
 
@@ -40,14 +44,26 @@
     padding: 15px 3.7333333333vw;
     font-size: 4.2666666667vw;
     font-weight: 700;
-    // line-height: 26px;
+    transition: 0.3s ease-in;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 16px;
-      line-height: 26px;
-      padding: 16px 26px;
+      font-size: 2.0833333333vw;
+      line-height: 3.3854166667vw;
+      padding: 2.0833333333vw 3.3854166667vw;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 1.1111111111vw;
+      line-height: 1.8055555556vw;
+      padding: 1.1111111111vw 1.8055555556vw;
     }
   }
+  
+  &__preorder-button:hover {
+    background-color: $dark-blue ;
+    color: $white;
+  }
+
 }
 
 /*----------------------------
@@ -55,19 +71,17 @@
 ----------------------------*/
 .tm {
   &__content-container-one {
-    // display: flex;
-    // flex-direction: column;
 
     @media only screen and (min-width: $tablet) {
       display: grid;
       grid-template-columns: 50% auto;
-      gap: 61px;
+      gap: 7.9427083333vw;
     }
 
     @media only screen and (min-width: $desktop) {
       grid-template-columns: 45% auto;
-      margin: 0 165px 0;
-      gap: 70px;
+      margin: 0 11.4583333333vw 0;
+      gap: 4.8611111111vw;
       position: relative;
     }
   }
@@ -78,8 +92,8 @@
       position: absolute;
       top: 0;
       height: 50%;
-      right: -285px;
-      width: 255px;
+      right: -19.7916666667vw;
+      width: 17.7083333333vw;
       background-color: $gray;
       border-radius: 20px;
     }
@@ -89,11 +103,11 @@
     margin: 0 6.4vw;
 
     @media only screen and (min-width: $tablet) {
-      margin: 60px 0 0 39px;
+      margin: 7.8125vw 0 0 5.078125vw;
     }
 
     @media only screen and (min-width: $desktop) {
-      margin: 60px 0;
+      margin: 4.1666666667vw 0;
     }
   }
 
@@ -103,15 +117,15 @@
     margin: 17.0666666667vw 0 8.5333333333vw;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 48px;
-      line-height: 48px;
-      margin: 0 0 34px;
+      font-size: 6.25vw;
+      line-height: 6.25vw;
+      margin: 0 0 4.4270833333vw;
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: 56px;
-      line-height: 56px;
-      margin: 0 0 24px;
+      font-size: 3.8888888889vw;
+      line-height: 3.8888888889vw;
+      margin: 0 0 1.6666666667vw;
     }
   }
 
@@ -129,7 +143,11 @@
     gap: 8.5333333333vw;
 
     @media only screen and (min-width: $tablet) {
-      gap: 37px;
+      gap: 4.8177083333vw;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      gap: 2.5694444444vw;
     }
   }
   &__preorder-button {
@@ -137,9 +155,18 @@
     color: $white;
 
     @media only screen and (min-width: $tablet) {
-      padding: 15px 3.7333333333vw;
-      font-size: 16px;
+      padding: 1.953125vw 3.3854166667vw;
+      font-size: 2.0833333333vw;
     }
+
+    @media only screen and (min-width: $desktop) {
+      padding: 1.0416666667vw 1.8055555556vw;
+      font-size: 1.1111111111vw;
+    }
+  }
+
+  &__preorder-button:hover {
+    background-color: $light-orange;
   }
 
   &__release-date {
@@ -149,8 +176,13 @@
     color: $dark-gray;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 2.0833333333vw;
+      line-height: 3.3854166667vw;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 1.1111111111vw;
+      line-height: 1.8055555556vw;
     }
   }
 
@@ -164,21 +196,20 @@
 
   @media only screen and (min-width: $tablet) {
     &__img {
-      height: 425px;
+      height: 55.3385416667vw;
       max-width: unset;
-      transform: translateX(30px);
+      transform: translateX(3.90625vw);
     }
 
     @media only screen and (min-width: $desktop) {
       &__img {
-        height: 480px;
+        height: 33.3333333333vw;
         transform: unset;
       }
     }
   }
 
   &__keyboard-image {
-    // max-width: 100%;
     border-radius: 20px 0 0 20px;
 
     @media only screen and (min-width: $desktop) {
@@ -188,13 +219,13 @@
 
   &__content-container-two {
     @media only screen and (min-width: $tablet) {
-      margin: 40px 40px 142px;
+      margin: 5.2083333333vw 5.2083333333vw 18.4895833333vw;
     }
 
     @media only screen and (min-width: $desktop) {
       display: flex;
-      gap: 125px;
-      margin: 30px 165px 168px;
+      gap: 8.6805555556vw;
+      margin: 2.0833333333vw 11.4583333333vw 11.6666666667vw;
       position: relative;
     }
   }
@@ -205,8 +236,8 @@
       position: absolute;
       bottom: 0;
       height: 50%;
-      left: -285px;
-      width: 255px;
+      left: -19.7916666667vw;
+      width: 17.7083333333vw;
       background-color: $gray;
       border-radius: 20px;
     }
@@ -224,10 +255,8 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      grid-template-columns: 255px 445px;
-
-      // grid-template-columns: 255px 445px ;
-      gap: 30px;
+      grid-template-columns: 17.7083333333vw 30.9027777778vw;
+      gap: 2.0833333333vw;
       margin: 0;
     }
   }
@@ -243,45 +272,35 @@
 
   &__keyboard-image-orange {
     border-radius: 0 20px 20px 0;
-    // height: 100%;
     mix-blend-mode: multiply;
     opacity: 0.75;
 
     @media only screen and (min-width: $tablet) {
       border-radius: 20px;
     }
-
-    // @media only screen and (min-width: $desktop) {
-    //   height: unset;
-    // }
   }
 
   &__keyboard-image-table {
     border-radius: 20px;
-    // height: 100%;
-
-    // @media only screen and (min-width: $desktop) {
-    //   height: unset;
-    // }
   }
 
   &__text {
     text-align: center;
     @media only screen and (min-width: $tablet) {
       display: flex;
-      gap: 50px;
+      gap: 6.5104166667vw;
       text-align: left;
-      margin: 72px 0 0;
+      margin: 9.375vw 0 0;
     }
 
     @media only screen and (min-width: $desktop) {
-      gap: 27px;
+      gap: 1.875vw;
     }
 
     @media only screen and (min-width: $desktop) {
       flex-direction: column;
-      flex-basis: 575px;
-      margin: 92px 0 0;
+      flex-basis: 39.9305555556vw;
+      margin: 6.3888888889vw 0 0;
     }
   }
 
@@ -292,8 +311,14 @@
     margin: 0 auto 6.4vw;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 4.1666666667vw;
+      line-height: 4.6875vw;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 2.2222222222vw;
+      line-height: 2.5vw;
       margin: 0;
     }
   }
@@ -303,13 +328,13 @@
     margin: 0 auto 29.6vw;
 
     @media only screen and (min-width: $tablet) {
-      // max-width: 87.2vw;
+      max-width: 51.8229166667vw;
       margin: 15px 0 0;
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 1.1111111111vw;
+      line-height: 1.8055555556vw;
       max-width: unset;
     }
   }
@@ -324,26 +349,26 @@
   @media only screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin: 142px 40px;
+    gap: 7.8125vw;
+    margin: 18.4895833333vw 5.2083333333vw;
     text-align: left;
   }
 
   @media only screen and (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    margin: 0 165px 128px;
+    gap: 2.0833333333vw;
+    margin: 0 11.4583333333vw 8.8888888889vw;
   }
 
   &__feature {
     margin: 0 0 17.0666666667vw;
 
     @media only screen and (min-width: $tablet) {
-      margin: 0px;
+      margin: 0;
     }
 
     @media only screen and (min-width: $desktop) {
-      max-width: 227px;
+      max-width: 15.7638888889vw;
     }
   }
 
@@ -355,9 +380,14 @@
     margin: 0 auto;
 
     @media only screen and (min-width: $tablet) {
-      width: 65px;
-      height: 65px;
+      width: 8.4635416667vw;
+      height: 8.4635416667vw;
       margin: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: 4.5138888889vw;
+      height: 4.5138888889vw;
     }
   }
 
@@ -383,9 +413,15 @@
     margin: 12.8vw 6.4vw;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 24px;
-      line-height: 28px;
-      margin: 40px 0 24px;
+      font-size: 3.125vw;
+      line-height: 3.6458333333vw;
+      margin: 5.2083333333vw 0 3.125vw;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 1.6666666667vw;
+      line-height: 1.9444444444vw;
+      margin: 2.7777777778vw 0 1.6666666667vw;
     }
     span {
       display: block;
@@ -400,7 +436,11 @@
   margin: 0 0 50px;
 
   @media only screen and (min-width: $tablet) {
-    margin: 43px;
+    margin: 5.5989583333vw;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin: 2.9861111111vw;
   }
   &__copyright {
     text-align: center;
