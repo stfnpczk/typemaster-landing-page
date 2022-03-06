@@ -450,22 +450,26 @@ img {
 }
 
 .header__preorder-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: #162542;
   background-color: #E8EFF2;
   border-radius: 8px;
-  padding: 15px 3.7333333333vw;
+  padding: 0 3.7333333333vw;
   font-size: 4.2666666667vw;
   font-weight: 700;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
   .header__preorder-button {
     font-size: 2.0833333333vw;
     line-height: 3.3854166667vw;
-    padding: 2.0833333333vw 3.3854166667vw;
+    padding: 0 3.3854166667vw;
   }
 }
 
@@ -473,7 +477,7 @@ img {
   .header__preorder-button {
     font-size: 1.1111111111vw;
     line-height: 1.8055555556vw;
-    padding: 1.1111111111vw 1.8055555556vw;
+    padding: 0 1.8055555556vw;
   }
 }
 
