@@ -400,9 +400,6 @@ img {
 }
 
 /*----------------------------
-      layout
- ----------------------------*/
-/*----------------------------
       header section
 ----------------------------*/
 .header {
@@ -425,7 +422,7 @@ img {
 
 @media only screen and (min-width: 1440px) {
   .header {
-    margin: 3.8194444444vw 11.4583333333vw 5.7638888889vw;
+    margin: 3.438rem 11.4583333333vw 5.188rem;
     height: 4.0277777778vw;
   }
 }
@@ -460,9 +457,11 @@ img {
   color: #162542;
   background-color: #E8EFF2;
   border-radius: 8px;
-  padding: 0 3.7333333333vw;
+  padding: 4vw 3.7333333333vw;
   font-size: 4.2666666667vw;
   font-weight: 700;
+  -webkit-transition: 0.3s color ease-in, 0.3s background-color ease-in;
+  transition: 0.3s color ease-in, 0.3s background-color ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -501,8 +500,8 @@ img {
 
 @media only screen and (min-width: 1440px) {
   .tm__content-container-one {
-    -ms-grid-columns: 45% auto;
-        grid-template-columns: 45% auto;
+    -ms-grid-columns: 45% minmax(auto, 40.625rem);
+        grid-template-columns: 45% minmax(auto, 40.625rem);
     margin: 0 11.4583333333vw 0;
     gap: 4.8611111111vw;
     position: relative;
@@ -539,8 +538,8 @@ img {
 }
 
 .tm__heading {
-  font-size: 12.8vw;
-  line-height: 12.8vw;
+  font-size: clamp(3rem, 12.8vw, 4.25rem);
+  line-height: clamp(3rem, 12.8vw, 4.25rem);
   margin: 17.0666666667vw 0 8.5333333333vw;
 }
 
@@ -646,29 +645,21 @@ img {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .tm__img {
-    height: 55.3385416667vw;
-    max-width: unset;
-    -webkit-transform: translateX(3.90625vw);
-            transform: translateX(3.90625vw);
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-width: 1440px) {
-  .tm__img {
-    height: 33.3333333333vw;
-    -webkit-transform: unset;
-            transform: unset;
-  }
-}
-
 .tm__keyboard-image {
   border-radius: 20px 0 0 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .tm__keyboard-image {
+    max-width: unset;
+    height: 55.339vw;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .tm__keyboard-image {
+    max-width: 100%;
+    height: unset;
     border-radius: 20px;
   }
 }
@@ -808,7 +799,6 @@ img {
   .tm__subheading {
     font-size: 2.2222222222vw;
     line-height: 2.5vw;
-    margin: 0;
   }
 }
 
